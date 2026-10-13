@@ -1,10 +1,103 @@
-h1 {color: green;}
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #333;
+}
 
+/* Titulos de las secciones */
+h2 {
+    color: #176b35;
+    text-align: center;
+    margin-top: 35px;
+}
 
-.rojo {color: #AD1018}
+/* Listas de ingredientes y preparación */
+ul, ol {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px 45px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #00000020;
+}
 
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #087a32;
+    color: white;
+    padding: 35px 15px;
+}
 
-.verde {color: green;
-        background-color: yellow;
-        text-decoration: underline;
-       }
+/* Enlaces */
+a {
+    color: #d35400;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #087a32;
+}
+/* SECCIÓN DE TACOS */
+.seccion-tacos {
+    padding: 40px 20px;
+    background-color: #fff8e7;
+    text-align: center;
+}
+
+.seccion-tacos h2 {
+    color: #176b35;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.texto-tacos {
+    color: #666;
+    font-size: 18px;
+}
+
+/* TARJETAS */
+.contenedor-tacos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.tarjeta-taco {
+    width: 280px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px #00000020;
+    transition: transform 0.3s;
+}
+
+.tarjeta-taco:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta-taco img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-taco h3 {
+    color: #176b35;
+    font-size: 22px;
+    margin: 18px 10px 8px;
+}
+
+.tarjeta-taco p {
+    color: #555;
+    padding: 0 15px 20px;
+    line-height: 1.5;
+}
