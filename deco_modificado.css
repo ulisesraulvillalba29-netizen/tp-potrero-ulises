@@ -1,0 +1,189 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #333;
+}
+
+/* Titulos de las secciones */
+h2 {
+    color: #176b35;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Listas de ingredientes y preparación */
+ul, ol {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px 45px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #00000020;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #087a32;
+    color: white;
+    padding: 35px 15px;
+}
+
+/* Enlaces */
+a {
+    color: #d35400;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #087a32;
+}
+/* SECCIÓN DE TACOS */
+.seccion-tacos {
+    padding: 40px 20px;
+    background-color: #fff8e7;
+    text-align: center;
+}
+
+.seccion-tacos h2 {
+    color: #176b35;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.texto-tacos {
+    color: #666;
+    font-size: 18px;
+}
+
+/* TARJETAS */
+.contenedor-tacos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.tarjeta-taco {
+    width: 280px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px #00000020;
+    transition: transform 0.3s;
+}
+
+.tarjeta-taco:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta-taco img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-taco h3 {
+    color: #176b35;
+    font-size: 22px;
+    margin: 18px 10px 8px;
+}
+
+.tarjeta-taco p {
+    color: #555;
+    padding: 0 15px 20px;
+    line-height: 1.5;
+}
+
+/* SECCIÓN DE ENLACES Y VIDEO */
+.seccion-recursos {
+    padding: 40px 20px 55px;
+    background-color: #f5ecd8;
+    text-align: center;
+}
+
+.seccion-recursos h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.texto-recursos {
+    margin: 0 auto 25px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.contenedor-recursos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    width: min(100%, 720px);
+    margin: 0 auto 35px;
+}
+
+.enlace-receta {
+    display: block;
+    box-sizing: border-box;
+    padding: 18px 20px;
+    border-radius: 12px;
+    background-color: white;
+    color: #176b35;
+    text-decoration: none;
+    box-shadow: 0 4px 10px #00000015;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.enlace-receta:hover {
+    color: white;
+    background-color: #087a32;
+    transform: translateY(-3px);
+}
+
+.video-destacado {
+    width: min(100%, 800px);
+    margin: 0 auto;
+}
+
+.video-destacado h3 {
+    margin: 0 0 16px;
+    color: #176b35;
+    font-size: 22px;
+}
+
+.marco-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #222;
+    box-shadow: 0 6px 18px #00000025;
+}
+
+.marco-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 520px) {
+    .contenedor-recursos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-recursos h2 {
+        font-size: 25px;
+    }
+}
+
